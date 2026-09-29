@@ -1,0 +1,170 @@
+
+.card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0.5rem 1.875rem rgba(0, 0, 0, 0.3);
+}
+
+/* images */
+.imageWrapper {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card:hover .image {
+  transform: scale(1.03);
+}
+
+/* Video overlay */
+.videoOverlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(14, 17, 22, 0.4);
+  cursor: pointer;
+  border: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .videoOverlay {
+  opacity: 1;
+}
+
+.playIcon {
+  font-size: 2rem;
+  color: var(--accent-teal);
+  filter: drop-shadow(0 0 8px rgba(79, 179, 169, 0.5));
+}
+
+/* info */
+.info {
+  padding: 1.25rem 1.5rem 1.5rem;
+}
+
+.place {
+  font-family: 'Fraunces', serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  margin-bottom: 0.35rem;
+  color: var(--text-primary);
+}
+
+.tagline {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+/* adudio button */
+.audioButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.4rem 0.8rem;
+  background: rgba(79, 179, 169, 0.08);
+  border: 1px solid rgba(79, 179, 169, 0.2);
+  border-radius: 6px;
+  cursor: pointer;
+  color: var(--accent-teal);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.audioButton:hover,
+.audioButtonActive {
+  background: rgba(79, 179, 169, 0.15);
+  border-color: var(--accent-teal);
+}
+
+/* Waveform bars*/
+.waveform {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 14px;
+}
+
+.bar {
+  width: 3px;
+  height: 3px;
+  background-color: var(--accent-teal);
+  border-radius: 1px;
+  transition: height 0.15s ease;
+}
+
+/* When playing , animate the bars */
+.audioButtonActive .bar:nth-child(1) { animation: wave 0.45s ease-in-out infinite; }
+.audioButtonActive .bar:nth-child(2) { animation: wave 0.55s ease-in-out 0.1s infinite; }
+.audioButtonActive .bar:nth-child(3) { animation: wave 0.5s ease-in-out 0.05s infinite; }
+.audioButtonActive .bar:nth-child(4) { animation: wave 0.6s ease-in-out 0.15s infinite; }
+.audioButtonActive .bar:nth-child(5) { animation: wave 0.48s ease-in-out 0.08s infinite; }
+
+@keyframes wave {
+  0%, 100% { height: 3px; }
+  50% { height: 14px; }
+}
+
+.audioLabel {
+  letter-spacing: 0.03em;
+}
+
+/* Video Modal  */
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 1rem;
+}
+
+.modalContent {
+  position: relative;
+  max-width: 56.25rem;
+  width: 100%;
+}
+
+.video {
+  width: 100%;
+  border-radius: 0.5rem;
+  display: block;
+}
+
+.closeButton {
+  position: absolute;
+  top: -2.5rem;
+  right: 0;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.2s;
+  padding: 0.5rem;
+}
+
+.closeButton:hover {
+  color: var(--text-primary);
+}

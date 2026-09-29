@@ -1,0 +1,31 @@
+
+.rainContainer {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.drop {
+  position: absolute;
+  top: -9.36rem;
+  width: 1px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(79, 179, 169, 0.3),  /* teal rain, matching the accent */
+    transparent
+  );
+  animation: fall linear infinite;
+  filter: blur(0.5px);
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-9.36rem);
+  }
+  100% {
+    transform: translateY(calc(100vh + 9.36rem ));
+  }
+}

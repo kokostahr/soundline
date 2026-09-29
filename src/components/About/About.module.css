@@ -1,0 +1,19 @@
+
+.about {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 6rem 1.5rem;
+}
+
+.body {
+  max-width: 560px;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--text-muted);
+}
+
+@media (max-width: 600px) {
+  .about {
+    padding: 4rem 1rem;
+  }
+}

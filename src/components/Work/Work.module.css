@@ -1,0 +1,23 @@
+
+.work {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 6rem 1.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 480px), 1fr));
+  gap: 1.5rem;
+}
+
+/* Mobile responsive: single column */
+@media (max-width: 600px) {
+  .work {
+    padding: 4rem 1rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

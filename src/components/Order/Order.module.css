@@ -1,0 +1,74 @@
+
+.order {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 6rem 1.5rem;
+}
+
+.content {
+  max-width: 480px;
+}
+
+.includesTitle {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.02em;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.list li {
+  padding: 0.3rem 0;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border);
+}
+
+.list li::before {
+  content: '— ';
+  color: var(--accent-teal);
+}
+
+.price {
+  font-family: 'Fraunces', serif;
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+}
+
+.cta {
+  display: inline-block;
+  padding: 0.9rem 2.2rem;
+  background: var(--accent-teal);
+  color: var(--base);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: box-shadow 0.3s, transform 0.2s;
+}
+
+.cta:hover {
+  box-shadow: 0 0 25px rgba(79, 179, 169, 0.3);
+  transform: translateY(-1px);
+}
+
+.alt {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 600px) {
+  .order {
+    padding: 4rem 1rem;
+  }
+}

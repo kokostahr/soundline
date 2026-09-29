@@ -79,8 +79,10 @@ const portraits = [
         tagline: 'Okinawa, Pre-ticket',
         image: '../public/images/okinawa.png',
         video: '../public/video/okinawa.mp4'
-    }, 
-]
+    },
+];
+
+export default portraits;
 
 /* {
         id: '',
