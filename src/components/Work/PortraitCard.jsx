@@ -71,7 +71,6 @@ function PortraitCard({ portrait }) {
                 src={portrait.image}
                 alt={portrait.place}
                 className={styles.image}
-                loading="lazy"
             />
 
             {/* Video play overlay (only on video cards) */}

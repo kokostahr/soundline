@@ -19,6 +19,7 @@ function About() {
                     asking. I've been here since September 9, and I still haven't decided if I want worship, anonymity or 
                     something neither has a name for. What I know I want: the work.
                 </p>
+                
                 <p>
                     <b>WHAT AM I?</b> A sound-first place portraitist. I pick a place, learn it properly (real research,
                     real resources), then capture what it SOUNDS like to me, not just what it looks like. Propane burners,
