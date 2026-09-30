@@ -1,5 +1,5 @@
 //Data for all the portraits he made (images and videos)
-
+const BASE = import.meta.env.BASE_URL;
 const portraits = [
     {
         id: 'valparaiso',
