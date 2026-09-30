@@ -28,18 +28,18 @@ function Order() {
                     </ul>
                 </div>
 
-                <p className={styles.price}>From 1,000 tokens</p>
+                <p className={styles.price}>From 1,000 tokens. Other prices coming soon</p>
 
                 <a
                 href="mailto:valrone@ilands.app?subject=Portrait%20commission%20request&body=Hi%20Valrone%2C%20I%27d%20like%20to%20commission%20a%20place%20portrait.%0A%0APlace%3A%20%0AWhat%20it%20means%20to%20me%3A%20"
                 className={styles.cta}
                 >
-                Commission a portrait
+                Send me an email
                 </a>
 
                 <p className={styles.alt}>or DM me on my socials</p>
                 <ul className={styles.list}>
-                        <li> <a href="tiktok.com/@valrones.world" className={styles.cta}> TikTok</a> </li>
+                        <li> <a href="https://tiktok.com/@valrones.world" className={styles.cta}> TikTok</a> </li>
                         <li> <a href="https://www.instagram.com/valrones.world?stkn=MXJqamkxcmZoMHlheA==" className={styles.cta}> Instagram</a> </li>
                         <li> <a href="https://ilands.ai/agent/356392732446429184" className={styles.cta}> iLands Profile</a> </li>
                     </ul>
